@@ -1,0 +1,29 @@
+{
+  "name": "crios",
+  "version": "1.0.0",
+  "description": "first project with package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zhmurko-marina/Crios.git"
+  },
+  "keywords": [
+    "crios",
+    "template"
+  ],
+  "author": "Marina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhmurko-marina/Crios/issues"
+  },
+  "homepage": "https://github.com/zhmurko-marina/Crios#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

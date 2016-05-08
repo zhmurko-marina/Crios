@@ -1,0 +1,267 @@
+/**************************************************
+    GENERAL STYLES
+/**************************************************/
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  width: 100%
+  padding: 0
+  overflow-x: hidden
+  font-family: 'Montserrat'
+.row
+  margin: 0
+
+.row::before, .row::after
+  display: none
+.col-lg-6, .col-lg-3, .col-sm-6
+  padding: 0
+
+  padding: 0
+
+.btn
+  border-radius: 22px
+  box-shadow: 0 0 35px rgba(218, 229, 239, 0.35)
+  border: none
+  color: #43a9ff
+  font-size: 14px
+  font-weight: 700
+  line-height: 18px
+  padding: 15px 40px
+
+/**************************************************
+  WELCOME WRAPPER
+/**************************************************/
+.welcome-wrapper
+  overflow: hidden
+  header
+    display: flex
+    height: 210px
+    .btn
+      margin-top: 50px
+      padding: 20px
+      border: none
+      border-radius: 50%
+      box-shadow: 0 0 65px #dae5ef
+    .container
+      max-width: 60px
+      margin: 0
+      padding: 0
+  .logo
+    h1
+      color: #43a9ff
+      font-size: 48px
+      font-weight: 400
+      margin: 30px 0 0 0
+    p
+      opacity: 0.15
+      color: #4b5863
+      font-size: 18px
+      font-weight: 700
+      line-height: 18px
+  .logo::before
+    content: ''
+    padding:  180px 207px
+    border-radius: 100%
+    box-shadow: 0 0 65px rgba(218, 229, 239, 0.55)
+    clip: rect(414px, 180px, 0, 0)
+  .text
+    background: url("../images/background.png") no-repeat bottom
+    height: 1200px
+    h2
+      color: #000
+      font-size: 48px
+      padding-top: 60px
+      padding-bottom: 25px
+    p
+      opacity: 0.25
+      color: #4b5863
+      font-size: 18px
+      font-weight: 400
+      line-height: 18px
+      padding-bottom: 80px
+
+
+/**************************************************
+  LIST WRAPPER
+/**************************************************/
+
+.list-wrapper
+  p
+    opacity: 0.25
+    color: #4b5863
+    font-size: 18px
+    font-weight: 400
+  h3
+    color: black
+    font-size: 48px
+    font-weight: 400
+    padding-bottom: 90px
+  ul
+    li:first-child::before
+      content: ''
+      padding: 30px
+      background: url("../images/icon-castle.png") center no-repeat
+    li:nth-child(2)::before
+      content: ''
+      padding: 30px
+      background: url("../images/icon-snow.png") center no-repeat
+    li:nth-child(3)::before
+      content: ''
+      padding: 30px
+      background: url("../images/icon-tree.png") center no-repeat
+    li:last-child::before
+      content: ''
+      padding: 30px
+      background: url("../images/icon-bell.png") center no-repeat
+    .header-p
+      opacity: 1
+      color: #000
+      font-size: 18px
+      font-weight: 400
+      padding: 65px 0 40px
+      margin: 0
+    p
+      opacity: 0.35
+      color: #4b5863
+      font-size: 14px
+      line-height: 24px
+  .btn
+    margin: 90px 0 120px
+
+/**************************************************
+    WRAPPER WITH PICTURES AND TEXT
+/**************************************************/
+
+.picture-text-wrapper
+  overflow: hidden
+  .picture
+    img
+      height: 562px
+  .text
+    background-color: #f7f8fb
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 0 5%
+    h4
+      color: #000
+      font-size: 48px
+      padding-bottom: 2%
+    p
+      opacity: 0.35
+      color: #4b5863
+      font-size: 16px
+      line-height: 36px
+
+/**************************************************
+ GENERAL STYLES
+/**************************************************/
+
+.app-wrapper
+  position: relative
+  z-index: 1
+  padding-top: 140px
+  overflow: hidden
+  .picture
+    z-index: 1
+  .text
+    padding: 16% 3% 6% 3%
+    h4
+      color: #43a9ff
+      font-size: 48px
+    p
+      opacity: 0.35
+      color: #4b5863
+      font-size: 16px
+      line-height: 36px
+
+.app-wrapper::before
+  content: ''
+  padding: 350px
+  background: url("../images/background-snowflake.png") no-repeat bottom
+  position: absolute
+  top: -140px
+  right: 67%
+
+.app-wrapper::after
+  content: ''
+  padding: 395px 350px
+  background: url("../images/background-snowflake-2.png") no-repeat bottom
+  position: absolute
+  bottom: -140px
+  left: 67%
+
+/**************************************************
+    WRAPPER
+/**************************************************/
+
+.template-wrapper
+  background: url("../images/snowflake-3.png") no-repeat left top #f7f8fb
+  .picture
+    right: 18%
+    img
+      height: 627px
+  .text
+    padding: 0 0 0 2%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    h5
+      color: #fe3254
+      font-size: 48px
+      padding-bottom: 40px
+    p
+      padding: 0 18% 0 0
+      opacity: 0.35
+      color: #4b5863
+      font-size: 16px
+      line-height: 36px
+    p:last-child
+      line-height: 36px
+    .name
+      opacity: 1
+      color: #000
+      font-size: 16px
+      margin: 0
+      line-height: 18px
+      padding-top: 60px
+
+/**************************************************
+    FOOTER
+/**************************************************/
+
+footer
+  height: 1520px
+  background: url("../images/background-forest.png") no-repeat bottom center
+  padding-top: 130px
+  p
+    color: #4b5863
+    font-size: 18px
+    line-height: 18px
+    opacity: 0.25
+  h6
+    color: #000
+    font-size: 48px
+    padding: 25px 0 95px
+
+/**************************************************
+    MEDIA QUERIES
+/**************************************************/
+@media screen and (max-width: 767px)
+  .container
+    width: 100%
+
+@media screen and (min-width: 768px) and (max-width: 991px)
+  .container
+    width: 760px
+
+@media screen and (min-width: 992px)
+  .container
+    width: 985px
+
+@media screen and (min-width: 1200px)
+  .container
+    width: 1170px
