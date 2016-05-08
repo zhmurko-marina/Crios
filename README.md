@@ -8,10 +8,11 @@
 - grunt-contrib-watch
 
 For installation run `npm install`.
-For compiling *style.sass* to *style.css* run `grunt`.
+For compiling **style.sass** to **style.css** run `grunt`.
 
 #### Libraries
 - bootstrap
 - jquery
 - flexboxgrid
+
 For installation run `bower install`.
