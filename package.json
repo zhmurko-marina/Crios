@@ -22,8 +22,11 @@
   "homepage": "https://github.com/zhmurko-marina/Crios#readme",
   "devDependencies": {
     "bower": "^1.7.9",
-    "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "browser-sync": "^2.12.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-sass": "^2.3.1"
   }
 }
