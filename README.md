@@ -1,14 +1,20 @@
 # Crios
-## First project with package.json, Grunfile.js, bower.json.
+## First project with package.json, Gulpfile.js, bower.json.
 
 ### Node.js
 - bower
-- grunt
-- grunt-contrib-sass
-- grunt-contrib-watch
+- browser-sync
+- gulp
+- gulp-autoprefixer
+- gulp-clean-css
+- gulp-htmlmin
+- gulp-sass
 
 For installation run `npm install`.
-For compiling **style.sass** to **style.css** run `grunt sass`.
+
+For compilation **style.sass** to **style.css** run `gulp sass`.
+
+For minimization **html-file** run `gulp minify`.
 
 #### Libraries
 - bootstrap
