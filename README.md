@@ -13,7 +13,7 @@
 
 For installation run `npm install`.
 
-For compilation **style.sass** to **style.css** run `gulp sass`.
+For compilation **style.sass** to **style.min.css** run `gulp sass`.
 
 For minimization **html-file** run `gulp minify`.
 
