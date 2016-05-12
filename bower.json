@@ -21,7 +21,6 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.6",
-    "flexboxgrid": "^6.3.0",
     "jquery": "^2.2.3"
   }
 }
