@@ -8,6 +8,7 @@
 - gulp-autoprefixer
 - gulp-clean-css
 - gulp-htmlmin
+- gulp-rename
 - gulp-sass
 
 For installation run `npm install`.
@@ -19,6 +20,5 @@ For minimization **html-file** run `gulp minify`.
 #### Libraries
 - bootstrap
 - jquery
-- flexboxgrid
 
 For installation run `bower install`.
