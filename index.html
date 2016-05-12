@@ -7,15 +7,17 @@
     <title>Lesson 14</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="bower_components/flexboxgrid/css/flexboxgrid.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
   </head>
   <body>
     <div class="welcome-wrapper">
       <div class="container">
-        <header class="around-xs">
-          <div class="container">
-            <div class="dropdown pull-left">
+        <header class="row">
+          <div class="col-xs-1">
+            <div class="dropdown">
               <button aria-expanded="true" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropdownMenu1" type="button">
                 <img alt="button" src="images/h.png">
               </button>
@@ -35,18 +37,18 @@
               </ul>
             </div>
           </div>
-          <div class="logo center-xs">
+          <div class="logo text-center col-xs-10">
             <h1 class="text-uppercase">Crios</h1>
             <p class="text-uppercase">Free PSD template</p>
           </div>
-          <div class="dropdown pull-left">
+          <div class="dropdown col-xs-1">
             <button aria-expanded="true" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
               <img alt="button" src="images/search-icon.png">
             </button>
           </div>
         </header>
       </div>
-        <div class="text center-xs">
+        <div class="text text-center">
           <h2>Simple PSD template with cool stuff</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <button class="btn btn-default text-uppercase">explore template</button>
@@ -54,11 +56,11 @@
 
     </div>
 
-    <div class="list-wrapper center-xs">
-      <div class="container">
+    <div class="list-wrapper textcenter">
+      <div class="container  text-center">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <h3>Lorem ipsum dolor sit amet</h3>
-        <ul class="list-unstyled row around-xs">
+        <ul class="list-unstyled row">
           <li class="col-md-3 col-xs-6">
             <p class="header-p">Lorem ipsum dolor sit amet</p>
             <p>Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.</p>
@@ -82,7 +84,7 @@
 
     <div class="picture-text-wrapper row">
       <div class="picture col-sm-6 col-xs-12">
-        <img alt="forest" src="images/forest.png">
+        <p><img alt="forest" src="images/forest.png"></p>
       </div>
       <div class="text col-sm-6 col-xs-12">
         <h4>Lorem ipsum dolor</h4>
@@ -96,38 +98,38 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
       </div>
       <div class="picture col-sm-6 col-xs-12">
-        <img alt="trees" src="images/trees.png">
+        <p><img alt="trees" src="images/trees.png"></p>
       </div>
     </div>
 
     <div class="app-wrapper">
       <div class="container">
         <div class="row">
-          <div class="picture center-xs col-md-6 col-xs-12">
+          <div class="picture col-md-6 col-xs-12">
             <img alt="forest" src="images/app-screen.png">
           </div>
           <div class="text col-md-6 col-xs-12">
             <h4>Lorem ipsum dolor</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
           </div>
-
+        </div>
+        <div class="row">
           <div class="text col-md-6 col-xs-12">
             <h4>Lorem ipsum dolor</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
           </div>
-          <div class="picture center-xs col-md-6 col-xs-12">
+          <div class="picture col-md-6 col-xs-12">
             <img alt="forest" src="images/app-screen-2.png">
           </div>
         </div>
-
       </div>
     </div>
 
     <div class="template-wrapper">
       <div class="container">
-        <div class="row around-xs">
-          <div class="start-xs col-md-6 col-xs-12">
-            <img alt="man" src="images/photo-man.png">
+        <div class="row">
+          <div class="picture col-md-6 col-xs-12">
+            <p><img alt="man" src="images/photo-man.png"></p>
           </div>
           <div class="text col-md-6 col-xs-12">
             <h5>Template is awesome</h5>
@@ -139,7 +141,7 @@
       </div>
     </div>
 
-    <footer class="center-xs">
+    <footer class="text-center">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       <h6>Lorem ipsum dolor sit amet</h6>
       <button class="btn btn-default text-uppercase">symu.co/freebies</button>

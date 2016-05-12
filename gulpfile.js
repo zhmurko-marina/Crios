@@ -4,6 +4,7 @@ var prefix = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
+var rename = require('gulp-rename');
 
 var paths = {
     styles: {
@@ -21,23 +22,28 @@ gulp.task('browserSync', function() {
   })
 });
 
-gulp.task('sass', function (){
-    gulp.src(paths.styles.files)
-	.pipe(sass())
-    .pipe(cleanCSS())
-    .pipe(prefix(
-        'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'
-    ))
-    .pipe(gulp.dest(paths.styles.dest))
-	.pipe(browserSync.reload({
-      stream: true
-    }))
-});
-
 gulp.task('minify', function() {
   return gulp.src('*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(''))
+});
+
+gulp.task('sass',function (){
+    gulp.src(paths.styles.files)
+	.pipe(sass())
+    .pipe(prefix(
+        'last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'
+    ))
+    .pipe(gulp.dest(paths.styles.dest))
+	return gulp.src('css/style.css')
+		.pipe(rename({
+			suffix: '.min'
+	}))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest(paths.styles.dest))
+	.pipe(browserSync.reload({
+      stream: true
+    }))
 });
 
 gulp.task('default', ['browserSync','sass'], function() {
@@ -45,6 +51,3 @@ gulp.task('default', ['browserSync','sass'], function() {
     gulp.watch('*.html', browserSync.reload);
 	gulp.watch('js/**/*.js', browserSync.reload);
 });
-
-
-
